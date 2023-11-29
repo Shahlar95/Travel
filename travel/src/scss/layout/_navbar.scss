@@ -1,0 +1,76 @@
+.container{
+    background-color: grey;
+    @include flex($just:space-between, $align:center);
+    padding: 30px 0;
+    .logo-div{
+        position: relative;
+        .logo{
+            color: #FFF;
+            text-align: center;
+            font-family: Volkhov;
+            font-size: 31.622px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+        svg{
+            position: absolute;
+            width: 96.13px;
+            height: 35.346px;
+            fill: #DF6951;
+            left: 20px;
+            bottom: -10px;
+        }
+
+     
+    }
+    .menu{
+       
+       ul{
+        display: flex;
+
+        li{
+           padding: 0 15px;
+           color: #FFF;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            span{
+                padding: 0 5px;
+                svg{
+                    width: 11.595px;
+                    height: 7.481px;
+                    fill: #FFF;
+                    
+    
+                }
+            }
+            
+        }
+       }
+
+    }
+    .touch{
+        width: 152px;
+        height: 58px;
+        flex-shrink: 0;
+        background-color: #DF6951;
+filter: drop-shadow(0px 20px 35px rgba(223, 105, 81, 0.15));
+        @include center();
+        border-radius: 15px;
+
+button{
+    color: #FFF;
+    font-family: Circular Std;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    background-color: #DF6951;
+
+}
+    }
+}

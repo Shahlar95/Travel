@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.container .logo-div {
+  position: relative;
+}
+.container .logo-div .logo {
+  color: #FFF;
+  text-align: center;
+  font-family: Volkhov;
+  font-size: 31.622px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.container .logo-div svg {
+  position: absolute;
+  width: 96.13px;
+  height: 35.346px;
+  fill: #DF6951;
+  left: 20px;
+  bottom: -10px;
+}
+.container .menu ul {
+  display: flex;
+}
+.container .menu ul li {
+  padding: 0 15px;
+  color: #FFF;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .menu ul li span {
+  padding: 0 5px;
+}
+.container .menu ul li span svg {
+  width: 11.595px;
+  height: 7.481px;
+  fill: #FFF;
+}
+.container .touch {
+  width: 152px;
+  height: 58px;
+  flex-shrink: 0;
+  background-color: #DF6951;
+  filter: drop-shadow(0px 20px 35px rgba(223, 105, 81, 0.15));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.container .touch button {
+  color: #FFF;
+  font-family: Circular Std;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  background-color: #DF6951;
+}/*# sourceMappingURL=style.css.map */
