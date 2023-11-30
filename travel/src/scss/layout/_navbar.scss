@@ -31,24 +31,71 @@
         display: flex;
 
         li{
-           padding: 0 15px;
-           color: #FFF;
-            font-size: 17px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            span{
-                padding: 0 5px;
-                svg{
-                    width: 11.595px;
-                    height: 7.481px;
-                    fill: #FFF;
-                    
-    
-                }
-            }
+          a{
+            padding: 0 15px;
+            color: #FFF;
+             font-size: 17px;
+             font-style: normal;
+             font-weight: 500;
+             line-height: normal;
+             span{
+                 padding: 0 0px;
+                 svg{
+                     width: 11.595px;
+                     height: 7.481px;
+                     fill: #FFF;
+                     
+     
+                 }
+             }
+          }
             
         }
+        #services{
+            position: relative;
+            z-index: 1;
+            a{
+                padding-right: 7px ;
+            }
+            .submenu{
+                position: absolute;
+                z-index: 2;
+                background-color: red;
+                left: 0;
+                top: 65px;
+                border-radius: 15px;
+                ul{
+                    
+                    @include flex($just:center,$direction:column);
+                    width: 250px;
+                    height: 188px;
+                    flex-shrink: 0;
+                    text-align: left;
+                    padding: 20px 0px;
+                    li{
+                        padding: 5px 0;
+                        a{
+                            color: #FFF;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+
+                        }
+                    }
+                   
+                }
+            }
+            .submenu::after{
+                position: absolute;
+                content: "";
+                background-color: blue;
+                top: -25px;
+                left: 30px;
+                width: 30px;
+                height: 30px;
+            }       
+         }
        }
 
     }
