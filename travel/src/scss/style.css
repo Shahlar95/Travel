@@ -207,4 +207,71 @@ a {
   font-weight: 700;
   line-height: 67.908px;
   text-align: left;
+}
+.home .where .container-fluid .where-content .where-choose {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 844px;
+  height: 102px;
+  border-radius: 5.224px;
+  background: rgba(243, 243, 243, 0.6);
+  -webkit-backdrop-filter: blur(17.7606182098px);
+          backdrop-filter: blur(17.7606182098px);
+}
+.home .where .container-fluid .where-content .where-adress {
+  border-right: 2px solid #D0D0D0;
+}
+.home .where .container-fluid .where-content .where-adress input {
+  color: #FFF;
+  font-size: 18.805px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: transparent;
+  border: none;
+  width: auto;
+}
+.home .where .container-fluid .where-content .where-adress input::-moz-placeholder {
+  color: #FFF;
+}
+.home .where .container-fluid .where-content .where-adress input::placeholder {
+  color: #FFF;
+}
+.home .where .container-fluid .where-content .where-adress input:focus {
+  outline: none;
+}
+.home .where .container-fluid .where-content .where-type {
+  border-right: 2px solid #D0D0D0;
+}
+.home .where .container-fluid .where-content .where-type select, .home .where .container-fluid .where-content .where-duration select {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+.home .where .container-fluid .where-content .where-type select option, .home .where .container-fluid .where-content .where-duration select option {
+  color: #fff;
+}
+.home .where .container-fluid .where-content .where-type select:focus, .home .where .container-fluid .where-content .where-duration select:focus {
+  outline: none;
+}
+.home .where .container-fluid .where-content .where-submit {
+  display: inline-flex;
+  padding: 16px 57.561px 15.416px 57px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #DF6951;
+  box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 0.15);
+}
+.home .where .container-fluid .where-content .where-submit button {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16.716px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
 }/*# sourceMappingURL=style.css.map */

@@ -25,15 +25,23 @@ function Home() {
                 </div>
                 <div className='where-choose'>
                     <div className='where-adress'>
-                      <input type="text" placeholder='Where to?' />
+                      <input type="search" placeholder='Where to?' />
                     </div>
-                    <div>
+                    <div className='where-type'>
                       <select name="Travel type" id="Travel type">
-                        <option value="Travel type"></option>
+                        <option value="Travel type">Travel type</option>
                       </select>
                     </div>
-                    <div></div>
-                    <div></div>
+                    <div className='where-duration'>
+                    <select name="duration" id="duration">
+                        <option value="duration">Duration</option>
+                      </select>
+                    </div>
+                    <div className='where-submit'>
+                        <button>
+                          Submit
+                        </button>
+                    </div>
                 </div>
           </div>
         </div>
