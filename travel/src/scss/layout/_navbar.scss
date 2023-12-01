@@ -1,7 +1,12 @@
 .container{
-    background-color: rgb(97, 97, 224);
+    // background-color: rgb(97, 97, 224);
     @include flex($just:space-between, $align:center);
     padding: 30px 0;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,0%);
+    z-index: 1;
     .logo-div{
         position: relative;
         .logo{
@@ -18,8 +23,8 @@
             position: absolute;
             width: 96.13px;
             height: 35.346px;
-            fill: #DF6951;
-            left: 20px;
+            fill: $mainColor();
+            left: 30px;
             bottom: -10px;
         }
 
@@ -32,7 +37,7 @@
 
         li{
           a{
-            padding: 0 15px;
+            padding: 0 20px;
             color: #FFF;
              font-size: 17px;
              font-style: normal;
@@ -59,9 +64,9 @@
             left: 50%;
             right: 50%;
             transform: translate(-50%, -50%);
-            height: 3px;
+            height: 2px;
             width:0%;
-            background-color: #DF6951;
+            background-color: $mainColor();
             opacity: 0;
             visibility: hidden;
             transition: .3s ease;
@@ -82,7 +87,7 @@
             .submenu{
                 position: absolute;
                 z-index: 2;
-                background-color: red;
+                background-color: rgba(217, 217, 217, 0.58);;
                 left: 0;
                 top: 50px;
                 border-radius: 15px;
@@ -121,9 +126,9 @@
                 left: 30px;
                 width: 0px;
                 height: 0px;
-                border-width: 20px;
+                border-width: 18px;
                 border-style: solid;
-                border-color: transparent  transparent red   transparent;
+                border-color: transparent  transparent rgba(217, 217, 217, 0.58)  transparent;
             }  
                  
          }
@@ -137,12 +142,12 @@
     }
     .touch{
         width: 152px;
-        height: 58px;
+        height: 50px;
         flex-shrink: 0;
-        background-color: #DF6951;
+        background-color: $mainColor();
 filter: drop-shadow(0px 20px 35px rgba(223, 105, 81, 0.15));
         @include center();
-        border-radius: 15px;
+        border-radius: 12px;
 
 button{
     color: #FFF;

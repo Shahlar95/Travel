@@ -24,11 +24,15 @@ a {
 }
 
 .container {
-  background-color: rgb(97, 97, 224);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
+  position: fixed;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 1;
 }
 .container .logo-div {
   position: relative;
@@ -48,14 +52,14 @@ a {
   width: 96.13px;
   height: 35.346px;
   fill: #DF6951;
-  left: 20px;
+  left: 30px;
   bottom: -10px;
 }
 .container .menu ul {
   display: flex;
 }
 .container .menu ul li a {
-  padding: 0 15px;
+  padding: 0 20px;
   color: #FFF;
   font-size: 17px;
   font-style: normal;
@@ -78,7 +82,7 @@ a {
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
-  height: 3px;
+  height: 2px;
   width: 0%;
   background-color: #DF6951;
   opacity: 0;
@@ -100,7 +104,7 @@ a {
 .container .menu ul #services .submenu {
   position: absolute;
   z-index: 2;
-  background-color: red;
+  background-color: rgba(217, 217, 217, 0.58);
   left: 0;
   top: 50px;
   border-radius: 15px;
@@ -138,9 +142,9 @@ a {
   left: 30px;
   width: 0px;
   height: 0px;
-  border-width: 20px;
+  border-width: 18px;
   border-style: solid;
-  border-color: transparent transparent red transparent;
+  border-color: transparent transparent rgba(217, 217, 217, 0.58) transparent;
 }
 .container .menu ul #services:hover .submenu {
   opacity: 1;
@@ -148,14 +152,14 @@ a {
 }
 .container .touch {
   width: 152px;
-  height: 58px;
+  height: 50px;
   flex-shrink: 0;
   background-color: #DF6951;
   filter: drop-shadow(0px 20px 35px rgba(223, 105, 81, 0.15));
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 .container .touch button {
   color: #FFF;
@@ -166,4 +170,41 @@ a {
   line-height: normal;
   border: none;
   background-color: #DF6951;
+}
+
+.home .where .container-fluid {
+  height: 120vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home .where .container-fluid::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(0, 0, 0, 0.356);
+}
+.home .where .container-fluid .where-content {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+}
+.home .where .container-fluid .where-content .svg span svg {
+  width: 78.356px;
+  height: 15.671px;
+}
+.home .where .container-fluid .where-content .where-text {
+  width: 631px;
+  height: 272px;
+}
+.home .where .container-fluid .where-content .where-text p {
+  color: #FFF;
+  font-size: 58.506px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 67.908px;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,53 @@
+.home{
+    .where{
+        .container-fluid{
+            height: 120vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            &::before{
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 120%;
+                background-color: rgba(0, 0, 0, 0.356);
+            }
+
+
+            .where-content{
+                position: absolute;
+                left: 20%;
+                top: 50%;
+
+                .svg{
+                    span{
+                        svg{
+                            width: 78.356px;
+                            height: 15.671px;
+                            
+                        }
+                    }
+                }
+                .where-text{
+                    width: 631px;
+                    height: 272px;
+                    
+                    p{
+                        color: #FFF;
+                        font-size: 58.506px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 67.908px;
+                        text-align: left;
+                    }
+                }
+
+            }
+            
+        
+        }
+    }
+}
