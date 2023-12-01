@@ -24,7 +24,7 @@ a {
 }
 
 .container {
-  background-color: grey;
+  background-color: rgb(97, 97, 224);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,6 +61,7 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  position: relative;
 }
 .container .menu ul li a span {
   padding: 0 0px;
@@ -69,6 +70,25 @@ a {
   width: 11.595px;
   height: 7.481px;
   fill: #FFF;
+}
+.container .menu ul li a:before {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  height: 3px;
+  width: 0%;
+  background-color: #DF6951;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+.container .menu ul li:hover a::before {
+  opacity: 1;
+  visibility: visible;
+  width: 50%;
 }
 .container .menu ul #services {
   position: relative;
@@ -82,8 +102,11 @@ a {
   z-index: 2;
   background-color: red;
   left: 0;
-  top: 65px;
+  top: 50px;
   border-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
 }
 .container .menu ul #services .submenu ul {
   display: flex;
@@ -105,14 +128,23 @@ a {
   font-weight: 400;
   line-height: normal;
 }
+.container .menu ul #services .submenu ul li a:before {
+  display: none;
+}
 .container .menu ul #services .submenu::after {
   position: absolute;
   content: "";
-  background-color: blue;
-  top: -25px;
+  top: -35px;
   left: 30px;
-  width: 30px;
-  height: 30px;
+  width: 0px;
+  height: 0px;
+  border-width: 20px;
+  border-style: solid;
+  border-color: transparent transparent red transparent;
+}
+.container .menu ul #services:hover .submenu {
+  opacity: 1;
+  visibility: visible;
 }
 .container .touch {
   width: 152px;
