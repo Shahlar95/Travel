@@ -173,10 +173,11 @@ a {
 }
 
 .home .where .container-fluid {
-  height: 120vh;
+  min-height: 120vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 .home .where .container-fluid::before {
   position: absolute;
@@ -189,8 +190,11 @@ a {
 }
 .home .where .container-fluid .where-content {
   position: absolute;
-  left: 20%;
-  top: 50%;
+  left: 60px;
+  top: 25%;
+}
+.home .where .container-fluid .where-content .svg {
+  text-align: left;
 }
 .home .where .container-fluid .where-content .svg span svg {
   width: 78.356px;

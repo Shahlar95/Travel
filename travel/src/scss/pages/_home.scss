@@ -1,11 +1,11 @@
 .home{
     .where{
         .container-fluid{
-            height: 120vh;
+            min-height: 120vh;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            
+            position: relative;
             &::before{
                 position: absolute;
                 content: "";
@@ -19,11 +19,13 @@
 
             .where-content{
                 position: absolute;
-                left: 20%;
-                top: 50%;
+                left: 60px;
+                top: 25%;
 
                 .svg{
+                    text-align: left;
                     span{
+                        
                         svg{
                             width: 78.356px;
                             height: 15.671px;
