@@ -1,6 +1,12 @@
 .mobile-menu{
-    display: block;
-    @media (min-width: 1024px) {
-        display: none;
-    }
+   width: 500px;
+   background-color: red;
+   position: fixed;
+   right: 0;
+   top:0;
+   .close{
+    position: absolute;
+    right: 0;
+    top: 0;
+   }
 }

@@ -31,7 +31,10 @@
      
     }
     .menu{
-       
+       display: none;
+       @media (min-width: 1024px) {
+            display: block;
+       }
        ul{
         display: flex;
 
@@ -141,13 +144,16 @@
 
     }
     .touch{
-        width: 152px;
+        display: none;
+        @media (min-width: 1024px) {
+            width: 152px;
         height: 50px;
-        flex-shrink: 0;
+        // flex-shrink: 0;
         background-color: $mainColor();
-filter: drop-shadow(0px 20px 35px rgba(223, 105, 81, 0.15));
+        filter: drop-shadow(0px 20px 35px rgba(223, 105, 81, 0.15));
         @include center();
         border-radius: 12px;
+        }
 
 button{
     color: #FFF;
@@ -160,5 +166,13 @@ button{
     background-color: #DF6951;
 
 }
+    }
+
+    .mobile-btn{
+        display: block;
+    
+        @media (min-width: 1024px) {
+        display: none;
+    }
     }
 }

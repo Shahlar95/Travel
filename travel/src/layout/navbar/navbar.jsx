@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Mobile from '../../components/mobile/mobile';
 
 import {Link} from 'react-router-dom'
 
  function Navbar() {
+  const [isMobileOpen, setMobileOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+      setMobileOpen(!isMobileOpen);
+  };
   return (
     <div className='container' >
         <div className='logo-div'>
@@ -48,10 +53,10 @@ import {Link} from 'react-router-dom'
         <div className='touch'>
             <button>Get in Touch</button>
         </div>
-        <div className='mobile-btn'>
+        <div className='mobile-btn' onClick={toggleMobileMenu}>
         <i class="fa-solid fa-bars"></i>
         </div>
-      <Mobile/>
+        {isMobileOpen && <Mobile />}
     </div>
   )
 }
