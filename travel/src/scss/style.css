@@ -172,6 +172,15 @@ a {
   background-color: #DF6951;
 }
 
+.mobile-menu {
+  display: block;
+}
+@media (min-width: 1024px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 .home .where .container-fluid {
   min-height: 120vh;
   background-position: center;

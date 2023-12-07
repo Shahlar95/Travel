@@ -1,0 +1,6 @@
+.mobile-menu{
+    display: block;
+    @media (min-width: 1024px) {
+        display: none;
+    }
+}

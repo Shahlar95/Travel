@@ -1,4 +1,5 @@
 import React from 'react';
+import Mobile from '../../components/mobile/mobile';
 
 import {Link} from 'react-router-dom'
 
@@ -47,6 +48,10 @@ import {Link} from 'react-router-dom'
         <div className='touch'>
             <button>Get in Touch</button>
         </div>
+        <div className='mobile-btn'>
+        <i class="fa-solid fa-bars"></i>
+        </div>
+      <Mobile/>
     </div>
   )
 }
