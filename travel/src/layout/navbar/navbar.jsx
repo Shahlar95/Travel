@@ -1,14 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Mobile from '../../components/mobile/mobile';
 
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
  function Navbar() {
-  const [isMobileOpen, setMobileOpen] = useState(false);
+  // const [isMobileOpen, setMobileOpen] = useState(false);
 
-  const toggleMobileMenu = () => {
-      setMobileOpen(!isMobileOpen);
-  };
+  // const toggleMobileMenu = () => {
+  //     setMobileOpen(!isMobileOpen);
+  // };
+//   function btnOpen() {
+//     const btn = document.querySelector('.mobile-btn')
+//     const mobileMenu = document.querySelector('.mobile-menu')
+    
+//     if (btn) {
+//       btn.addEventListener('click', () => {
+//         mobileMenu.classList.toggle('show');
+//         console.log('salam');
+//       });
+//   }
+// btnOpen()
   return (
     <div className='container' >
         <div className='logo-div'>
@@ -53,12 +64,13 @@ import {Link} from 'react-router-dom'
         <div className='touch'>
             <button>Get in Touch</button>
         </div>
-        <div className='mobile-btn' onClick={toggleMobileMenu}>
+        <div className='mobile-btn'>
         <i class="fa-solid fa-bars"></i>
         </div>
-        {isMobileOpen && <Mobile />}
+          <Mobile />
     </div>
   )
 }
+ 
 
 export default  Navbar
