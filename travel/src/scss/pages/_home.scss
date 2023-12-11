@@ -28,6 +28,7 @@
                 // flex-direction: column;
                 margin: 0 90px;
                 max-height: 500px;
+                overflow: hidden;
                 .svg{
                     text-align: left;
                     span{
@@ -58,11 +59,14 @@
                     display: flex;
                     justify-content: space-around;
                     align-items: center;
-                    width: 844px;
+                    max-width: 844px;
                     height: 102px;
                     border-radius: 5.224px;
                     background: rgba(243, 243, 243, 0.60);
                     backdrop-filter: blur(17.760618209838867px);
+                    @media (min-width: 1024px) {
+                        width: 844px;
+                    }
                 }
 
                 .where-adress{

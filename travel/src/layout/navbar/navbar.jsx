@@ -4,24 +4,18 @@ import Mobile from '../../components/mobile/mobile';
 import {Link} from 'react-router-dom';
 
  function Navbar() {
-  // const [isMobileOpen, setMobileOpen] = useState(false);
 
-  // const toggleMobileMenu = () => {
-  //     setMobileOpen(!isMobileOpen);
-  // };
-//   function btnOpen() {
-//     const btn = document.querySelector('.mobile-btn')
-//     const mobileMenu = document.querySelector('.mobile-menu')
-    
-//     if (btn) {
-//       btn.addEventListener('click', () => {
-//         mobileMenu.classList.toggle('show');
-//         console.log('salam');
-//       });
-//   }
-// btnOpen()
+
+ const handleClick = () =>{
+  // const btn = document.querySelector('.mobile-btn')
+  const mobileMenu = document.querySelector('.mobile-menu')
+          mobileMenu.classList.toggle('show');
+}
+
   return (
-    <div className='container' >
+    <div className='nav' >
+     <section  className='detskop-navbar'>
+        <div className="container">
         <div className='logo-div'>
             <h2 className='logo'>Travel</h2>
             <svg xmlns="http://www.w3.org/2000/svg" width="99" height="39" viewBox="0 0 99 39" fill="none">
@@ -64,10 +58,14 @@ import {Link} from 'react-router-dom';
         <div className='touch'>
             <button>Get in Touch</button>
         </div>
-        <div className='mobile-btn'>
+        <div className='mobile-btn' onClick={handleClick}>
         <i class="fa-solid fa-bars"></i>
         </div>
-          <Mobile />
+        </div>
+     </section>
+     <section>
+      <Mobile/>
+     </section>
     </div>
   )
 }
