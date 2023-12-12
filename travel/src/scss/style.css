@@ -186,6 +186,7 @@ a {
 }
 .nav .detskop-navbar .container .mobile-btn {
   display: block;
+  color: #fff;
 }
 @media (min-width: 1024px) {
   .nav .detskop-navbar .container .mobile-btn {
@@ -216,7 +217,7 @@ a {
   transform: translateX(100%);
   width: 400px;
   height: 100vh;
-  background-color: red;
+  background-color: #fff;
   position: fixed;
   right: 0px;
   top: 0;
@@ -232,8 +233,31 @@ a {
   top: 10px;
 }
 .mobile-menu .close i {
-  color: #FFF;
+  color: #DF6951;
   font-size: 20px;
+}
+.mobile-menu .logo-div {
+  width: 100px;
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+.mobile-menu .logo-div .logo {
+  text-align: center;
+  font-family: Volkhov;
+  font-size: 31.622px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.mobile-menu .logo-div svg {
+  position: absolute;
+  width: 96.13px;
+  height: 35.346px;
+  fill: #DF6951;
+  left: 30px;
+  bottom: -10px;
 }
 .mobile-menu .menu ul {
   display: flex;
@@ -246,7 +270,7 @@ a {
 }
 .mobile-menu .menu ul li a {
   padding: 0 20px;
-  color: #FFF;
+  color: #DF6951;
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
@@ -254,11 +278,6 @@ a {
 }
 .mobile-menu .menu ul li a span {
   padding: 0 0px;
-}
-.mobile-menu .menu ul li a span svg {
-  width: 11.595px;
-  height: 7.481px;
-  fill: #FFF;
 }
 .mobile-menu .menu ul #services {
   position: relative;
@@ -268,15 +287,7 @@ a {
   padding-right: 7px;
 }
 .mobile-menu .menu ul #services .submenu {
-  position: absolute;
-  z-index: 2;
-  background-color: rgba(217, 217, 217, 0.58);
-  left: 0;
-  top: 50px;
   border-radius: 15px;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s ease;
 }
 .mobile-menu .menu ul #services .submenu ul {
   display: flex;
@@ -292,7 +303,7 @@ a {
   padding: 5px 0;
 }
 .mobile-menu .menu ul #services .submenu ul li a {
-  color: #FFF;
+  color: #DF6951;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -301,18 +312,7 @@ a {
 .mobile-menu .menu ul #services .submenu ul li a:before {
   display: none;
 }
-.mobile-menu .menu ul #services .submenu::after {
-  position: absolute;
-  content: "";
-  top: -35px;
-  left: 30px;
-  width: 0px;
-  height: 0px;
-  border-width: 18px;
-  border-style: solid;
-  border-color: transparent transparent rgba(217, 217, 217, 0.58) transparent;
-}
-.mobile-menu .menu ul #services:hover .submenu {
+.mobile-menu .menu ul .submenu.active {
   opacity: 1;
   visibility: visible;
 }
