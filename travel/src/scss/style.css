@@ -276,8 +276,12 @@ a {
   font-weight: 500;
   line-height: normal;
 }
-.mobile-menu .menu ul li a span {
+.mobile-menu .menu ul li span {
   padding: 0 0px;
+}
+.mobile-menu .menu ul li span i {
+  color: #DF6951;
+  cursor: pointer;
 }
 .mobile-menu .menu ul #services {
   position: relative;
@@ -288,6 +292,8 @@ a {
 }
 .mobile-menu .menu ul #services .submenu {
   border-radius: 15px;
+  max-height: 0;
+  overflow: hidden;
 }
 .mobile-menu .menu ul #services .submenu ul {
   display: flex;
@@ -311,10 +317,6 @@ a {
 }
 .mobile-menu .menu ul #services .submenu ul li a:before {
   display: none;
-}
-.mobile-menu .menu ul .submenu.active {
-  opacity: 1;
-  visibility: visible;
 }
 
 .home .where .container-fluid {

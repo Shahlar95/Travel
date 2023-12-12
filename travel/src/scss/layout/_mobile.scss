@@ -68,10 +68,16 @@
             line-height: normal;
             
             
-            span{
-                padding: 0 0px;
-            }
+           
          }
+         span{
+            padding: 0 0px;
+            
+            i{
+                color: #DF6951;
+                cursor: pointer;
+            }
+        }
        
 
        }
@@ -82,9 +88,12 @@
            a{
                padding-right: 7px ;
            }
+          
            .submenu{
             //    background-color: rgba(217, 217, 217, 0.58);
                border-radius: 15px;
+               max-height: 0;
+               overflow: hidden;
                ul{
                    
                    @include flex($just:center,$direction:column);
@@ -113,11 +122,11 @@
           
                 
         }
-        .submenu.active{
-           opacity: 1;
-           visibility: visible;
+        // .submenu.active{
+        //    opacity: 1;
+        //    visibility: visible;
            
-        }
+        // }
       }
 
    }
