@@ -43,7 +43,32 @@ function Home() {
                         </button>
                     </div>
                 </div>
+                <div className='comments'>
+            <div className='svg'> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+  <circle cx="18.7876" cy="18.2505" r="16.9538" fill="#DF6951" stroke="white" stroke-width="2.08948"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+  <circle cx="18.7876" cy="18.2505" r="16.9538" fill="#DF6951" stroke="white" stroke-width="2.08948"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+  <circle cx="18.7876" cy="18.2505" r="16.9538" fill="#DF6951" stroke="white" stroke-width="2.08948"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+  <circle cx="18.7876" cy="18.2505" r="16.9538" fill="#DF6951" stroke="white" stroke-width="2.08948"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+  <circle cx="18.7876" cy="18.2505" r="16.9538" fill="#DF6951" stroke="white" stroke-width="2.08948"/>
+</svg>        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+  <circle cx="18.7876" cy="18.2505" r="16.9538" fill="#DF6951" stroke="white" stroke-width="2.08948"/>
+</svg>
+            </div>
+            <div className='comment-content'>
+              2,500 people booked Tommorowland Event in last 24 hours
+            </div>
           </div>
+          </div>
+          
         </div>
       </section>
       

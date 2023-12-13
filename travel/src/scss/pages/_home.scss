@@ -6,6 +6,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
+           
             &::before{
                 position: absolute;
                 content: "";
@@ -132,7 +133,28 @@
                 }
 
             }
-            
+            .comments{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 20px 0;
+
+                .comment-content{
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    
+                        color: #FFF;
+                        font-size: 12.537px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 37.611px;
+                        
+                    
+                }
+
+            }   
+
         
         }
     }

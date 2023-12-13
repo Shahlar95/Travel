@@ -436,4 +436,17 @@ a {
   line-height: normal;
   border: none;
   background-color: transparent;
+}
+.home .where .container-fluid .comments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.home .where .container-fluid .comments .comment-content {
+  color: #FFF;
+  font-size: 12.537px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 37.611px;
 }/*# sourceMappingURL=style.css.map */
