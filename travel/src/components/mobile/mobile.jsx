@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 
 
 function Mobile() {
+
+  // add showmobile meu
   const handleClickRemove =()=>{
     
     const mobileMenu = document.querySelector('.mobile-menu')
@@ -10,7 +12,7 @@ function Mobile() {
     
  
   }
-
+//add submenuheight
   const handleClickSubmenu = () =>{
     const icon = document.querySelector('.triangle');
     const submenu = document.querySelector('.submenu');
