@@ -1,4 +1,5 @@
 import React from 'react';
+import Slide from '../../components/slide/slide';
 
 function Home() {
   return (
@@ -71,7 +72,9 @@ function Home() {
           
         </div>
       </section>
-      
+      <section className='partnership'>
+          <Slide/>
+        </section>
     </div>
   );
 }

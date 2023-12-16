@@ -319,6 +319,18 @@ a {
   display: none;
 }
 
+.partnership .slider .swiper .swiper-wrapper .swiper-slide .img-div {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.partnership .slider .swiper .swiper-wrapper .swiper-slide .img-div .img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .home .where .container-fluid {
   min-height: 120vh;
   background-position: center;
