@@ -319,16 +319,19 @@ a {
   display: none;
 }
 
-.partnership .slider .swiper .swiper-wrapper .swiper-slide .img-div {
-  width: 100%;
+.partnership .slider .swiper .swiper-wrapper .swiper-slide {
+  margin: 50px 0;
   height: 200px;
+  flex-shrink: 0;
   overflow: hidden;
 }
-.partnership .slider .swiper .swiper-wrapper .swiper-slide .img-div .img {
-  width: 100%;
-  height: 100%;
+.partnership .slider .swiper .swiper-wrapper .swiper-slide img {
+  width: 143.385px;
+  height: 65px;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0.44;
+  background-color: transparent;
 }
 
 .home .where .container-fluid {
