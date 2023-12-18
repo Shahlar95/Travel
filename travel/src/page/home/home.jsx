@@ -75,6 +75,27 @@ function Home() {
       <section className='partnership'>
           <Slide/>
         </section>
+        <section className='services'>
+            <div className="container">
+              <div className="service-header">
+                  <p>CATEGORY</p>
+                  <h2>We Offer Best Services</h2>
+              </div>
+              <div className="row">
+                <div className="img">
+                  <img src="https://s3-alpha-sig.figma.com/img/6c57/3b51/b1a9f9a1a3d9c9b7cf6fcd7dd0366bfb?Expires=1704067200&Signature=bD2BkILPuVfQrmNWo14ThggMNZ1XnsMvT-nkXvMGNF2D2MbLvNp1OjRWORPht2Ce8paSiOhmv-6qdpkEka1lQL3sqoIgXQL2DAVCaPKGResbR-VTp6gk31na0Medegs-p87-VFS20UAZwHpisWs291IymFQrzFgkx43mMrS~S6VW-Fg~~Xho-ZIwjBBtHKKjc7q92zm8qSOuH47-lcd5bV6YyDLYHTNOLHn4mYOGMzC2dYrfwtuW83Tb7j7m4yvRNVj8Fx3~qj797oqd1XpdOHBrHw95Oad3KZMlBIFfNFOpzWCwA7G7Q4T5JIKl9wRigl68m6Hjzv37u5JOYRzRlw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="image" />
+                </div>
+                <div className="content">
+                  <h2>
+                  Guided Tours
+                  </h2>
+                  <p>
+                  sunt qui repellat saepe quo velit aperiam id aliquam placeat.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </section>
     </div>
   );
 }

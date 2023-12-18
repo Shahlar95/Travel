@@ -10,17 +10,24 @@ import 'swiper/css/pagination';
 
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+
 
 
 function Slide() {
   return (
     <div className='slider'>
+      
       <Swiper
         slidesPerView={5}
         spaceBetween={30}
         loop={true}
-        // modules={[Pagination]}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
+        // modules={[, Pagination, Navigation]}
+        // onAutoplayTimeLeft={onAutoplayTimeLeft}
+        
         className="mySwiper"
       >
         <SwiperSlide>
